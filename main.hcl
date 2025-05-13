@@ -1,5 +1,5 @@
 resource "lab" "main" {
-  title = "My First Lab"
+  title = "My First lab"
   description = <<-EOF
   This is my first lab.
   EOF
