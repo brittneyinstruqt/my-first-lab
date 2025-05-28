@@ -9,3 +9,11 @@ resource "page" "quiz" {
     "france" = resource.quiz.france
   }
 }
+
+resource "page" "task" {
+  file = "instructions/task.md"
+  
+  activities = {
+    "edit_html" = resource.task.helloworld
+  }
+}

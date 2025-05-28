@@ -22,6 +22,12 @@ resource "lab" "main" {
       target = resource.service.webserver
     }
 
+    tab "terminal" {
+      title = "Terminal"
+      panel = "left"
+      target = resource.terminal.shell
+    }
+
     instructions {
       panel = "right"
     }
@@ -37,6 +43,10 @@ resource "lab" "main" {
 
       page "quiz" {
         reference = resource.page.quiz
+      }
+
+      page "task" {
+        reference = resource.page.task
       }
     }
   }
