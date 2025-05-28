@@ -1,7 +1,7 @@
 resource "lab" "main" {
-  title = "My First lab"
+  title = "My First Lab"
   description = <<-EOF
-  This is my first lab.
+  This is the Skeleton Lab.
   EOF
 
   layout "single_column" {
@@ -11,14 +11,15 @@ resource "lab" "main" {
       panel = "instructions"
     }
   }
-  
-  content {
-   chapter "introduction" {
-    title = "Introduction"
 
-    page "first_page" {
-      reference = resource.page.first
+  content {
+    chapter "introduction" {
+      title = "Introduction"
+
+      page "first_page" {
+        reference = resource.page.first
+      }
     }
-   }
+  }
 }
-}
+

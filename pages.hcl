@@ -1,3 +1,3 @@
 resource "page" "first" {
-    file = "instructions/first.md"
+  file = "instructions/first.md"
 }
