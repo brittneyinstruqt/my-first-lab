@@ -49,6 +49,15 @@ resource "lab" "main" {
         reference = resource.page.task
       }
     }
+
+    chapter "feedback" {
+      layout_name = "single_column"
+      title = "feedback"
+
+      page "feedback" {
+        reference = resource.page.feedback
+      }
+    }
   }
 }
 

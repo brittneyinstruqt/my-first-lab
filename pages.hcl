@@ -17,3 +17,7 @@ resource "page" "task" {
     "edit_html" = resource.task.helloworld
   }
 }
+
+resource "page" "feedback" {
+  file = "instructions/feedback.md"
+}
