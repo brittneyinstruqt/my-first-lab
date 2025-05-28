@@ -12,6 +12,21 @@ resource "lab" "main" {
     }
   }
 
+  layout "two_columns" {
+    reference = resource.layout.two_panels
+    default = true
+
+    tab "webserver" {
+      title = "Webserver"
+      panel = "left"
+      target = resource.service.webserver
+    }
+
+    instructions {
+      panel = "right"
+    }
+  }
+
   content {
     chapter "introduction" {
       title = "Introduction"
